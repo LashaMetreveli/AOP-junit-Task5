@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class PrintAnnotationAspect {
 
   @Before("@annotation(lasha.metreveli.davaleba4.aspect.Println)")
-  public void PrintAnnotationAspect(JoinPoint joinPoint) {
+  public void PrintAdvice(JoinPoint joinPoint) {
 
     String method = joinPoint.toString();
     int index = method.indexOf('4');
